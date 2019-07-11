@@ -16,7 +16,7 @@ Functions: Another upper system that provide debug
 
 Interface:
 <div align=center>
-<img src='imags/interface.jpg' width='800'>
+<img src='Images/interface.jpg' width='800'>
 </div>
 
 Components
