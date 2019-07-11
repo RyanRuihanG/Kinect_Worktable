@@ -1,0 +1,2 @@
+# Kinect_Worktable
+We develop a mechatronic control system based on Kinect and 3-DOF worktable. The system obtains the real-time position of human key points from Kinect, and then records the trajectory of human hands. The trajectory will be converted to the G code (the command in numerically controlled machine) through our plug-in components, which guides the 3-DOF worktable to draw the same trajectory.
