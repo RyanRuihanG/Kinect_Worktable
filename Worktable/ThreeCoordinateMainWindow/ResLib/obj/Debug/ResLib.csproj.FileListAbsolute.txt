@@ -1,0 +1,8 @@
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\bin\Debug\ResLib.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\bin\Debug\ResLib.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\obj\Debug\ResLib.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\obj\Debug\ResLib.MainFormRes.resources
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\obj\Debug\ResLib.csproj.GenerateResource.Cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\obj\Debug\ResLib.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\obj\Debug\ResLib.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ResLib\obj\Debug\ResLib.pdb

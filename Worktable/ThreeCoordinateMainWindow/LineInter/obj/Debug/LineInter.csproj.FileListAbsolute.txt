@@ -1,0 +1,34 @@
+D:\BUAA\学习\CSharp\插补\LineInterpolation\LineInter\obj\Debug\LineInter.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\CSharp\插补\LineInterpolation\LineInter\obj\Debug\LineInter.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\CSharp\插补\LineInterpolation\LineInter\bin\Debug\LineInter.dll
+D:\BUAA\学习\CSharp\插补\LineInterpolation\LineInter\bin\Debug\LineInter.pdb
+D:\BUAA\学习\CSharp\插补\LineInterpolation\LineInter\obj\Debug\LineInter.dll
+D:\BUAA\学习\CSharp\插补\LineInterpolation\LineInter\obj\Debug\LineInter.pdb
+I:\研一\LineInterpolation\LineInter\bin\Debug\LineInter.dll
+I:\研一\LineInterpolation\LineInter\bin\Debug\LineInter.pdb
+I:\研一\LineInterpolation\LineInter\obj\Debug\LineInter.csprojResolveAssemblyReference.cache
+I:\研一\LineInterpolation\LineInter\obj\Debug\LineInter.dll
+I:\研一\LineInterpolation\LineInter\obj\Debug\LineInter.pdb
+E:\北航\研一课程\现代机电控制\实验\三自由度工作台\LineInterpolation\LineInter\bin\Debug\LineInter.dll
+E:\北航\研一课程\现代机电控制\实验\三自由度工作台\LineInterpolation\LineInter\bin\Debug\LineInter.pdb
+E:\北航\研一课程\现代机电控制\实验\三自由度工作台\LineInterpolation\LineInter\obj\Debug\LineInter.csprojResolveAssemblyReference.cache
+E:\北航\研一课程\现代机电控制\实验\三自由度工作台\LineInterpolation\LineInter\obj\Debug\LineInter.dll
+E:\北航\研一课程\现代机电控制\实验\三自由度工作台\LineInterpolation\LineInter\obj\Debug\LineInter.pdb
+F:\待看\现代机电控制\作业\作业二 预备资料\LineInterpolation\LineInterpolation\LineInter\bin\Debug\LineInter.dll
+F:\待看\现代机电控制\作业\作业二 预备资料\LineInterpolation\LineInterpolation\LineInter\bin\Debug\LineInter.pdb
+F:\待看\现代机电控制\作业\作业二 预备资料\LineInterpolation\LineInterpolation\LineInter\obj\Debug\LineInter.csprojResolveAssemblyReference.cache
+F:\待看\现代机电控制\作业\作业二 预备资料\LineInterpolation\LineInterpolation\LineInter\obj\Debug\LineInter.dll
+F:\待看\现代机电控制\作业\作业二 预备资料\LineInterpolation\LineInterpolation\LineInter\obj\Debug\LineInter.pdb
+D:\Desktop\LineInterpolation\LineInter\bin\Debug\LineInter.dll
+D:\Desktop\LineInterpolation\LineInter\bin\Debug\LineInter.pdb
+D:\Desktop\LineInterpolation\LineInter\obj\Debug\LineInter.csprojResolveAssemblyReference.cache
+D:\Desktop\LineInterpolation\LineInter\obj\Debug\LineInter.dll
+D:\Desktop\LineInterpolation\LineInter\obj\Debug\LineInter.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\bin\Debug\LineInter.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\bin\Debug\LineInter.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\obj\Debug\LineInter.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\obj\Debug\LineInter.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\obj\Debug\LineInter.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\obj\Debug\LineInter.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\bin\Debug\IPublicPlugInInterface.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\LineInter\bin\Debug\IPublicPlugInInterface.pdb

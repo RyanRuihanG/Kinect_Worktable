@@ -1,0 +1,6 @@
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\bin\Release\GCodeInterpreter.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\bin\Release\GCodeInterpreter.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Release\GCodeInterpreter.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Release\GCodeInterpreter.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Release\GCodeInterpreter.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Release\GCodeInterpreter.pdb

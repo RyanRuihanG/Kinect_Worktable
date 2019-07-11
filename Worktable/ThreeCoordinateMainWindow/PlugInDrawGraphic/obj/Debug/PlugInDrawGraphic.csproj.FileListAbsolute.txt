@@ -1,0 +1,8 @@
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ThreeCoordinateMainWindow\bin\Debug\PlugIn\PlugInDrawGraphic.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ThreeCoordinateMainWindow\bin\Debug\PlugIn\PlugInDrawGraphic.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawGraphic\obj\Debug\PlugInDrawGraphic.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawGraphic\obj\Debug\PlugInDrawGraphic.PreviewWindow.resources
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawGraphic\obj\Debug\PlugInDrawGraphic.csproj.GenerateResource.Cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawGraphic\obj\Debug\PlugInDrawGraphic.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawGraphic\obj\Debug\PlugInDrawGraphic.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawGraphic\obj\Debug\PlugInDrawGraphic.pdb

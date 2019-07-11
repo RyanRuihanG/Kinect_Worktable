@@ -1,0 +1,6 @@
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IEncoder\bin\Release\IEncoder.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IEncoder\bin\Release\IEncoder.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IEncoder\obj\Release\TDCommunication.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IEncoder\obj\Release\TDCommunication.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IEncoder\obj\Release\IEncoder.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IEncoder\obj\Release\IEncoder.pdb

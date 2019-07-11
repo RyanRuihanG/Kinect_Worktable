@@ -1,0 +1,16 @@
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\PlutinWinform\bin\Debug\dlls\Plugin3.dll
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\PlutinWinform\bin\Debug\dlls\Plugin3.pdb
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\Plugin3\obj\Debug\Plugin3.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\Plugin3\obj\Debug\Plugin3.FormE.resources
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\Plugin3\obj\Debug\Plugin3.csproj.GenerateResource.Cache
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\Plugin3\obj\Debug\Plugin3.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\Plugin3\obj\Debug\Plugin3.dll
+D:\BUAA\学习\CSharp\plugin program\Plugintest\PlutinWinform\Plugin3\obj\Debug\Plugin3.pdb
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\PlutinWinform\bin\Debug\dlls\Plugin3.dll
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\PlutinWinform\bin\Debug\dlls\Plugin3.pdb
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\Plugin3\obj\Debug\Plugin3.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\Plugin3\obj\Debug\Plugin3.FormE.resources
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\Plugin3\obj\Debug\Plugin3.csproj.GenerateResource.Cache
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\Plugin3\obj\Debug\Plugin3.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\Plugin3\obj\Debug\Plugin3.dll
+D:\BUAA\学习\CSharp\plugin program\PlugintestTrans\PlutinWinform\Plugin3\obj\Debug\Plugin3.pdb

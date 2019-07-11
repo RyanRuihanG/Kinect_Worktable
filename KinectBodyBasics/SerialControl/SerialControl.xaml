@@ -1,0 +1,497 @@
+﻿<UserControl x:Class="SerialControlNS.SerialControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SerialControlNS"
+             mc:Ignorable="d" 
+             d:DesignHeight="112" d:DesignWidth="280" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <Storyboard x:Key="AniSwitchOn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btnSwitch">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-43.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="54.0486749222611,-9.78405992668741E-07"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="8.7148807766626,0.208101948794678">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="61.1630671635087,-9.78405992668741E-07"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="15.8292730179102,0.208101948794678">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point1)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="68.2774686844427,-9.78405992668741E-07"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="22.9436745388442,0.208101948794678">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point2)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="59.4984178015126,4.06735807967316"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="14.164623655914,4.27546100687383">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point3)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="59.4984178015126,9.49071428571432"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="14.164623655914,9.69881721291499">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point1)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="59.4984178015126,14.9140713480698"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="14.164623655914,15.1221742752705">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point2)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="68.2774594047563,19.6960030731983"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="22.9436652591577,19.904106000399">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point3)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="61.4721456795963,19.6960030731983"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="16.1383515339977,19.904106000399">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[4].(BezierSegment.Point1)" Storyboard.TargetName="OffBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="54.6668319544362,19.6960030731983"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="9.33303780883767,19.904106000399">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="9.2756874854924,-9.78405992668741E-07"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="52.6089281792166,0.190664228747309">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="16.3900693836492,-9.78405992668741E-07"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="59.7233100773734,0.190664228747309">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point1)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="23.5044605614789,-9.78405992668741E-07"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="66.8377012552031,0.190664228747309">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point2)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="14.7254259729423,4.06735840021362"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="58.0586666666665,4.25802360736691">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point3)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="14.7254259729423,9.49071460625478"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="58.0586666666665,9.68137981340809">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point1)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="14.7254259729423,14.9140716686103"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="58.0586666666665,15.1047368757635">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point2)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="23.504451281806,19.6960030731983"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="66.8376919755302,19.8866682803516">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point3)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="16.6991474503902,19.6960030731983"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="60.0323881441144,19.8866682803516">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[4].(BezierSegment.Point1)" Storyboard.TargetName="OnBackGround">
+                <EasingPointKeyFrame KeyTime="0" Value="9.89384361897456,19.6960030731983"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="53.2270843126987,19.8866682803516">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AniSwitchOff">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btnSwitch">
+                <SplineDoubleKeyFrame KeyTime="0" Value="-43.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="8.7148807766626,0.208101948794678"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="54.0486749222611,-9.78405992668741E-07">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="15.8292730179102,0.208101948794678"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="61.1630671635087,-9.78405992668741E-07">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point1)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="22.9436745388442,0.208101948794678"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="68.2774686844427,-9.78405992668741E-07">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point2)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="14.164623655914,4.27546100687383"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="59.4984178015126,4.06735807967316">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point3)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="14.164623655914,9.69881721291499"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="59.4984178015126,9.49071428571432">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point1)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="14.164623655914,15.1221742752705"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="59.4984178015126,14.9140713480698">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point2)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="22.9436652591577,19.904106000399"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="68.2774594047563,19.6960030731983">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point3)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="16.1383515339977,19.904106000399"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="61.4721456795963,19.6960030731983">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[4].(BezierSegment.Point1)" Storyboard.TargetName="OffBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="9.33303780883767,19.904106000399"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="54.6668319544362,19.6960030731983">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="52.6089281792166,0.190664228747309"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="9.2756874854924,-9.78405992668741E-07">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="59.7233100773734,0.190664228747309"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="16.3900693836492,-9.78405992668741E-07">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point1)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="66.8377012552031,0.190664228747309"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="23.5044605614789,-9.78405992668741E-07">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point2)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="58.0586666666665,4.25802360736691"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="14.7254259729423,4.06735840021362">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point3)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="58.0586666666665,9.68137981340809"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="14.7254259729423,9.49071460625478">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point1)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="58.0586666666665,15.1047368757635"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="14.7254259729423,14.9140716686103">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point2)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="66.8376919755302,19.8866682803516"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="23.504451281806,19.6960030731983">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(BezierSegment.Point3)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="60.0323881441144,19.8866682803516"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="16.6991474503902,19.6960030731983">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[4].(BezierSegment.Point1)" Storyboard.TargetName="OnBackGround">
+                <SplinePointKeyFrame KeyTime="0" Value="53.2270843126987,19.8866682803516"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="9.89384361897456,19.6960030731983">
+                    <EasingPointKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingPointKeyFrame.EasingFunction>
+                </EasingPointKeyFrame>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Grid.Column="1" 
+            Grid.Row="1" 
+            Content="串口号" 
+            Foreground="White"
+            Margin="-2,-2,0,0"/>
+        <ComboBox x:Name="cbSerial" 
+                  Grid.Column="2"
+                  Grid.Row="1"
+                  Margin="1,2,1,2" />
+
+        <Label 
+            Grid.Column="1" 
+            Grid.Row="3" 
+            Content="波特率" 
+            Foreground="White"
+            Margin="-2,-2,0,0"/>
+        <ComboBox x:Name="cbBaudRate" 
+                  Grid.Column="2"
+                  Grid.Row="3"
+                  Margin="1,2,1,2" SelectedIndex="13" >
+
+            <ListBoxItem Content="1382400"/>
+            <ListBoxItem Content="921600"/>
+            <ListBoxItem Content="460800"/>
+            <ListBoxItem Content="256000"/>
+            <ListBoxItem Content="230400"/>
+            <ListBoxItem Content="128000"/>
+            <ListBoxItem Content="115200"/>
+            <ListBoxItem Content="76800"/>
+            <ListBoxItem Content="57600"/>
+            <ListBoxItem Content="43000"/>
+            <ListBoxItem Content="38400"/>
+            <ListBoxItem Content="19200"/>
+            <ListBoxItem Content="14400"/>
+            <ListBoxItem Content="9600"/>
+            <ListBoxItem Content="4800"/>
+            <ListBoxItem Content="2400"/>
+            <ListBoxItem Content="1200"/>
+        </ComboBox>
+
+        <Label 
+            Grid.Column="4" 
+            Grid.Row="3" 
+            Content="数据位" 
+            Foreground="White"
+            Margin="-2,-2,0,0"/>
+        <ComboBox x:Name="cbDataBits" 
+                  Grid.Column="5"
+                  Grid.Row="3"
+                  Margin="1,2,1,2" SelectedIndex="0">
+            <ListBoxItem Content="8"/>
+            <ListBoxItem Content="7"/>
+            <ListBoxItem Content="6"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
+
+        <Label 
+            Grid.Column="1" 
+            Grid.Row="5" 
+            Content="停止位" 
+            Foreground="White"
+            Margin="-2,-2,0,0"/>
+        <ComboBox x:Name="cbStopBits" 
+                  Grid.Column="2"
+                  Grid.Row="5"
+                  Margin="1,2,1,2" SelectedIndex="0">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="1.5"/>
+            <ListBoxItem Content="2"/>
+        </ComboBox>
+
+        <Label 
+            Grid.Column="4" 
+            Grid.Row="5" 
+            Content="校验" 
+            Foreground="White"
+            Margin="-2,-2,0,0"/>
+        <ComboBox x:Name="cbParity" 
+                  Grid.Column="5"
+                  Grid.Row="5"
+                  Margin="1,2,1,2" SelectedIndex="0">
+            <ListBoxItem Content="无"/>
+            <ListBoxItem Content="奇校验"/>
+            <ListBoxItem Content="偶校验"/>
+        </ComboBox>
+
+        <Button x:Name="btnFind"
+                Grid.Column="5"
+                Grid.Row ="1"
+                Content="查找串口"
+                Margin="-20,1,30,1" Click="btnFind_Click"
+                />
+        <Path Grid.Column="4" Data="M149.66667,89.666667 C149.66667,81.665584 155.33263,77.666045 161.33263,77.666045 167.33263,77.666045 214.37738,77.666045 222.04401,77.666045 229.71065,77.666045 233.7103,82.999611 233.7103,89.332982 233.7103,95.666354 229.71064,100.66695 222.37708,100.66695 215.04352,100.66695 167.6657,100.66695 160.99913,100.66695 154.33256,100.66695 149.66667,97.66775 149.66667,89.666667 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21.286" Margin="25.162,0,0,0" Grid.Row="7" Stretch="Fill" VerticalAlignment="Top" Width="80.322" Grid.ColumnSpan="2"/>
+        <Path x:Name="OffBackGround" Grid.Column="4" Fill="#FFBBBBBB" HorizontalAlignment="Left" Height="19.904" Margin="26.33,0.795,0,0" Grid.Row="7" VerticalAlignment="Top" Width="64.058" Grid.ColumnSpan="2">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" StartPoint="-1.62666378855647E-06,10.27630334674">
+                        <BezierSegment Point3="10.8256434495567,-9.78405992668741E-07" Point2="5.25783158861057,-9.78405992668741E-07" Point1="-1.62666378855647E-06,3.42486149324672"/>
+                        <BezierSegment Point3="61.1630671635087,-9.78405992668741E-07" Point2="54.0486749222611,-9.78405992668741E-07" Point1="16.3934553105028,-9.78405992668741E-07"/>
+                        <BezierSegment Point3="59.4984178015126,9.49071428571432" Point2="59.4984178015126,4.06735807967316" Point1="68.2774686844427,-9.78405992668741E-07"/>
+                        <BezierSegment Point3="61.4721456795963,19.6960030731983" Point2="68.2774594047563,19.6960030731983" Point1="59.4984178015126,14.9140713480698"/>
+                        <BezierSegment Point3="10.5161659069525,19.6960030731983" Point2="16.7025338265904,19.6960030731983" Point1="54.6668319544362,19.6960030731983"/>
+                        <BezierSegment Point3="-1.62666378855647E-06,10.27630334674" Point2="-1.62666378855647E-06,17.1277452002333" Point1="4.32979798731452,19.6960030731983"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <Path x:Name="OnBackGround" Grid.Column="5" Fill="#FF66CCFF" HorizontalAlignment="Left" Height="19.887" Margin="16.501,0.795,0,0" Grid.Row="7" VerticalAlignment="Top" Width="62.618" RenderTransformOrigin="0.5,0.5">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" StartPoint="-1.62666142955459E-06,10.27630334674">
+                        <BezierSegment Point3="10.8256277109512,-9.78405992668741E-07" Point2="5.25782394463658,-9.78405992668741E-07" Point1="-1.62666142955459E-06,3.42486149324672"/>
+                        <BezierSegment Point3="16.3900693836492,-9.78405992668741E-07" Point2="9.2756874854924,-9.78405992668741E-07" Point1="16.3934314772658,-9.78405992668741E-07"/>
+                        <BezierSegment Point3="14.7254259729423,9.49071460625478" Point2="14.7254259729423,4.06735840021362" Point1="23.5044605614789,-9.78405992668741E-07"/>
+                        <BezierSegment Point3="16.6991474503902,19.6960030731983" Point2="23.504451281806,19.6960030731983" Point1="14.7254259729423,14.9140716686103"/>
+                        <BezierSegment Point3="10.5161506182735,19.6960030731983" Point2="16.7025095440069,19.6960030731983" Point1="9.89384361897456,19.6960030731983"/>
+                        <BezierSegment Point3="-1.62666142955459E-06,10.27630334674" Point2="-1.62666142955459E-06,17.1277452002333" Point1="4.3297916925402,19.6960030731983"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform X="-20.227000000000004" Y="-0.1910000000000025"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="btnSwitch" Grid.Column="5" Data="M149.66667,89.666667 C149.66667,81.665584 155.33263,77.666045 161.33263,77.666045 167.33263,77.666045 169.74492,77.666045 177.41155,77.666045 185.07819,77.666045 189.07784,82.999611 189.07784,89.332982 189.07784,95.666354 185.07818,100.66695 177.74462,100.66695 170.41106,100.66695 167.6657,100.66695 160.99913,100.66695 154.33256,100.66695 149.66667,97.66775 149.66667,89.666667 z" HorizontalAlignment="Left" Height="19.696" Margin="24.391,0.795,0,0" Grid.Row="7" Stretch="Fill" VerticalAlignment="Top" Width="35.33" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" MouseDown="btnSwitch_MouseDown">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="2" Direction="224" Color="#FF555555" ShadowDepth="1"/>
+            </Path.Effect>
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Gainsboro" Offset="0.837"/>
+                    <GradientStop Color="#FF686868" Offset="1"/>
+                    <GradientStop Color="#FF9B9B9B"/>
+                    <GradientStop Color="#FFDADADA" Offset="0.163"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+
+        
+    </Grid>
+</UserControl>

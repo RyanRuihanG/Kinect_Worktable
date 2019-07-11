@@ -1,0 +1,8 @@
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ThreeCoordinateMainWindow\bin\Debug\PlugIn\DrawCopy.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\ThreeCoordinateMainWindow\bin\Debug\PlugIn\DrawCopy.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawCopy\obj\Debug\PlugInDrawCopy.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawCopy\obj\Debug\DrawCopy.FormE.resources
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawCopy\obj\Debug\PlugInDrawCopy.csproj.GenerateResource.Cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawCopy\obj\Debug\PlugInDrawCopy.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawCopy\obj\Debug\DrawCopy.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\PlugInDrawCopy\obj\Debug\DrawCopy.pdb

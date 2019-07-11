@@ -1,0 +1,12 @@
+D:\BUAA\学习\CSharp\GCodeInterpreter\GCodeInterpreterTest\GCodeInterpreter\obj\Debug\GCodeInterpreter.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\CSharp\GCodeInterpreter\GCodeInterpreterTest\GCodeInterpreter\obj\Debug\GCodeInterpreter.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\CSharp\GCodeInterpreter\GCodeInterpreterTest\GCodeInterpreterTest\bin\Debug\GCodeInterpreter.dll
+D:\BUAA\学习\CSharp\GCodeInterpreter\GCodeInterpreterTest\GCodeInterpreterTest\bin\Debug\GCodeInterpreter.pdb
+D:\BUAA\学习\CSharp\GCodeInterpreter\GCodeInterpreterTest\GCodeInterpreter\obj\Debug\GCodeInterpreter.dll
+D:\BUAA\学习\CSharp\GCodeInterpreter\GCodeInterpreterTest\GCodeInterpreter\obj\Debug\GCodeInterpreter.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreterTest\bin\Debug\GCodeInterpreter.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreterTest\bin\Debug\GCodeInterpreter.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Debug\GCodeInterpreter.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Debug\GCodeInterpreter.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Debug\GCodeInterpreter.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\GCodeInterpreter\obj\Debug\GCodeInterpreter.pdb

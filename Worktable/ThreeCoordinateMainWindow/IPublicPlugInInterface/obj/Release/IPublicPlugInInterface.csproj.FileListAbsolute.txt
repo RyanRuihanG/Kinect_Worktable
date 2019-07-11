@@ -1,0 +1,6 @@
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IPublicPlugInInterface\bin\Release\IPublicPlugInInterface.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IPublicPlugInInterface\bin\Release\IPublicPlugInInterface.pdb
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IPublicPlugInInterface\obj\Release\IPublicPlugInInterface.csprojResolveAssemblyReference.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IPublicPlugInInterface\obj\Release\IPublicPlugInInterface.csproj.CoreCompileInputs.cache
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IPublicPlugInInterface\obj\Release\IPublicPlugInInterface.dll
+D:\BUAA\学习\现代机电控制\三坐标工作台上位机\ThreeCoordinateMainWindow\IPublicPlugInInterface\obj\Release\IPublicPlugInInterface.pdb
